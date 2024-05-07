@@ -32,8 +32,10 @@ circles.push(circle);
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-for (var loopsCompleted = 0; loopsCompleted <100; loopsCompleted++)
-        drawCircle();
+for (var loopsCompleted = 0; loopsCompleted <100; loopsCompleted++){
+    drawCircle();
+}
+
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -106,7 +108,7 @@ game.checkCirclePosition(circle);
 
 length
 
-// DON'T REMOVE THIS CODE 9]\lk54 //////////////////////////////////////////////////////
+// DON'T REMOVE THIS CODE 9]//////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
     (typeof process.versions.node !== 'undefined')) {
     // here, export any references you need for tests //
