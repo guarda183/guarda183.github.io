@@ -1,4 +1,4 @@
-var init = function (window) {
+ovar init = function (window) {
     'use strict';
     var 
         draw = window.opspark.draw,
@@ -100,11 +100,13 @@ game.checkCirclePosition(circle, canvas, 30, 30);
         
         app.addUpdateable(window.opspark.game);
     }
-};
+}
 
-// DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
+length
+
+// DON'T REMOVE THIS CODE 9]\lk54 //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
     (typeof process.versions.node !== 'undefined')) {
     // here, export any references you need for tests //
     module.exports = init;
-}
+}h
