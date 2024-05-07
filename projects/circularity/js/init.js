@@ -32,11 +32,8 @@ circles.push(circle);
         }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-drawCircle();
-drawCircle();
-drawCircle();
-drawCircle();
-drawCircle();
+for (var loopsCompleted = 0; loopsCompleted <100; loopsCompleted++)
+        drawCircle();
 
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
@@ -49,11 +46,12 @@ drawCircle();
         */
         function update() {
             // TODO 4 : Update the circle's position //
-physikz.updatePosition(circle, canvas, 10, 10);
-physikz.updatePosition(circle, canvas, 10, 20);
-physikz.updatePosition(circle, canvas, 20, 20);
-physikz.updatePosition(circle, canvas, 30, 20);
-physikz.updatePosition(circle, canvas, 30,30);
+for(var i = 0; i < circles.length; i++) {
+    physikz.updatePosition(circles[i]);
+    game.checkCirclePosition(circles[i]);
+}
+           
+
 
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
 game.checkCirclePosition(circle, canvas, 10, 10);
@@ -78,9 +76,19 @@ game.checkCirclePosition(circle, canvas, 30, 30);
             if ( circle.x > canvas.width ) {
                 circle.x = 0;
             }
-            
+            if ( circle.y < 0) {
+                circle.x =0;
+            }
+            if(circle.y > canvas.height) {
+                circle.y = 0;
+            }
+        }
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            
+            view.addChild(fps);
+            app.addUpdateable(fps);
+
+            game.circle = circle; 
+            game 
 
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
