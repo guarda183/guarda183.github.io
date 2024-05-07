@@ -54,11 +54,11 @@ for(var i = 0; i < circles.length; i++) {
 
 
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-game.checkCirclePosition(circle, canvas, 10, 10);
-game.checkCirclePosition(circle, canvas, 10, 20);
-game.checkCirclePosition(circle, canvas, 20, 20);
-game.checkCirclePosition(circle, canvas, 30, 20);
-game.checkCirclePosition(circle, canvas, 30, 30);
+game.checkCirclePosition(circle);
+game.checkCirclePosition(circle);
+game.checkCirclePosition(circle);
+game.checkCirclePosition(circle);
+game.checkCirclePosition(circle);
 
             // TODO 9 : Iterate over the array
            
@@ -73,6 +73,8 @@ game.checkCirclePosition(circle, canvas, 30, 30);
         game.checkCirclePosition = function(circle) {
 
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
+         
+            // TODO 6 : YOUR CODE STARTS HERE //////////////////////
             if ( circle.x > canvas.width ) {
                 circle.x = 0;
             }
@@ -83,16 +85,8 @@ game.checkCirclePosition(circle, canvas, 30, 30);
                 circle.y = 0;
             }
         }
-            // TODO 6 : YOUR CODE STARTS HERE //////////////////////
-            view.addChild(fps);
-            app.addUpdateable(fps);
-
-            game.circle = circle; 
-            game 
-
 
             // YOUR TODO 6 CODE ENDS HERE //////////////////////////
-        }
         
         /////////////////////////////////////////////////////////////
         // --- NO CODE BELOW HERE  --- DO NOT REMOVE THIS CODE --- //
@@ -102,7 +96,7 @@ game.checkCirclePosition(circle, canvas, 30, 30);
         app.addUpdateable(fps);
         
         game.circle = circle;
-        game.circles = circles;
+        game.circles = circles;     
         game.drawCircle = drawCircle;
         game.update = update;
         
