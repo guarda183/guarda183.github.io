@@ -1,4 +1,4 @@
-ovar init = function (window) {
+var init = function (window) {
     'use strict';
     var 
         draw = window.opspark.draw,
