@@ -27,7 +27,7 @@ var circles = [];
         function drawCircle() {
 circle = draw.randomCircleInArea(canvas, true, true, "#999", 2);
 physikz.addRandomVelocity(circle, canvas);
-view.addChild(circle, canvas);
+view.addChild(circle);
 circles.push(circle);
         }
 
