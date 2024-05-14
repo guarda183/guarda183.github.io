@@ -81,9 +81,9 @@ game.checkCirclePosition(circle);
                 circle.x = 0;
             }
             if ( circle.y < 0) {
-                circle.x =0;
+                circle.y = canvas.height;
             }
-            if(circle.y > canvas.height) {
+            if(circle.y < canvas.height) {
                 circle.y = 0;
             }
         }
