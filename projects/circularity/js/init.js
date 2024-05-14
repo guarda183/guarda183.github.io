@@ -11,7 +11,7 @@ var init = function (window) {
         
     
     window.opspark.makeGame = function() {
-        
+        ''
         window.opspark.game = {};
         var game = window.opspark.game;
         
